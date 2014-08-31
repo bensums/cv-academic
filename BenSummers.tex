@@ -1,0 +1,98 @@
+% Much of this taken from http://texblog.org/2012/04/25/writing-a-cv-in-latex/
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper,margin=3cm]{geometry}
+\usepackage{fullpage}
+
+% Palatino font:
+\usepackage[sc]{mathpazo}
+\linespread{1.05}         % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+% Neat compact sections:
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\usepackage[hidelinks]{hyperref} % for url links
+
+%opening
+\title{Ben Summers CV}
+\author{Ben Summers}
+\date{}
+
+\begin{document}
+
+\thispagestyle{empty} % no page numbers
+\pagestyle{empty}     % no page numbers
+\setlength{\parindent}{0pt} % no paragraph indentation
+
+\begin{center}
+{\bfseries\Huge Benjamin Summers}\\
+\vspace{2em}
+\href{mailto:bensums+cv@gmail.com}{bensums+cv@gmail.com}\\
+%\vspace{1em}
+43 Cannon Street, Little Downham, Ely, Cambs. CB6 2SS. UK\\
+%\vspace{1em}
++44 7812 790453\\
+\end{center}
+
+\section*{Personal profile}
+On completion of my PhD in 2013 I felt as though I had only just started with Mathematics, however I found employment as a programmer. I dearly missed the feeling of personal fulfilment, the challenge and the permanence that comes from proving a result in Mathematics and left the job to return to academia. I believe it is important to pass on my knowledge to future generations and am excited to do so. I have a lot to offer in this field.
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+2008--2013&{\bf PhD in Mathematics}, University of East Anglia, England\\
+          & Involved many areas of Mathematics, mostly falling under Algebraic Combinatorics. I studied modular representations which arise from the symmetry of the hypercube or cross-polytope in a homological fashion. This has applications in Combinatorics, for example in calculating ranks of incidence matrices over finite fields. I learnt how to organise my own time and prioritise tasks. Became confident giving talks. Presented own research at a conference.\vspace{5pt}\\
+2004--2008&{\bf MMath in Mathematics}, 1st class, University of East Anglia, England\\
+          &Dissertation on root systems of Lie algebras. Year abroad at the University of British Columbia in Vancouver.\vspace{5pt}\\
+2001--2003&A-levels in Mathematics (A), Product Design (B) and Physics (A).\\
+          &AS-levels in Further Mathematics (A) and Chemistry (A).
+\end{tabular}
+
+\section*{Employment}
+\begin{tabular}{L!{\VRule}R}
+2013--January 2014&{\bf Solutions Engineer at Cadence Design Systems}\\
+          &Developed an internal productivity/process web application for one of the two leading electronic design automation companies. Improved ability to work effectively in teams. Developed communication skills. Strong emphasis on continuously evaluating which of the current tasks were most urgent and important for the business. Heavy Linux use. Used recent Microsoft Office applications.\\
+2008--2012&{\bf Associate Tutor at University of East Anglia}\\
+          &Developed communication skills as had to communicate difficult concepts to a range of students. Marked scripts.\\
+\end{tabular}
+
+\section*{Other experience}
+\begin{tabular}{L!{\VRule}R}
+2010&{\bf One-to-one tutoring}\\
+    &Tutored a final year undergraduate in Group Theory. I tried to give the student additional ways of looking at the subject rather than just repeat the content of the notes. Received extremely positive feedback from the student.\vspace{5pt}\\
+\end{tabular}
+% \clearpage
+
+\section*{Research interests}
+\begin{tabular}{L!{\VRule}R}
+General  &Representation Theory, Algebraic Combinatorics, Homological Algebra, Group Theory\\
+Specific &Invariants of incidence matrices, eg. the $p$-rank and diagonal forms.\\
+         &Representation theory of complex reflection groups $G(r,m,n)$ and associated algebras.\\
+       
+\end{tabular}
+
+\section*{Skills}
+\begin{tabular}{L!{\VRule}R}
+General&Very strong analytical and problem-solving abilities.\\
+       &Easily see the more general picture.\\
+       &Desire to understand everything at its most basic level.\\
+       &Grasp new concepts quickly.\\
+       &Good communication skills.\\
+       &Good presentation skills.\\
+       &Strong computer skills including Linux, Python, LaTeX, TikZ, GAP, Git, Haskell, full-stack web development.
+\end{tabular}
+
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+English&Mother tongue\vspace{5pt}\\
+French&Basic\vspace{5pt}\\
+Swedish&Basic\vspace{5pt}\\
+Greek&Basic\\
+\end{tabular}
+
+
+\end{document}
