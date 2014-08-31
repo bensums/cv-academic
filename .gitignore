@@ -1,6 +1,10 @@
+# TeX junk
 *.aux
 *.log
 *.out
 *.pdf
 *.synctex.gz
 *.tex.backup
+
+# Vim undo files
+*.un~
